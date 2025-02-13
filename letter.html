@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Letter</title>
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hearts-container" id="hearts-container"></div>
+        <div class="envelope" id="envelope">
+            <div class="flap" id="flap"></div>
+            <div class="body"></div>
+            <div class="letter" id="letter">
+                <p>I love you baby,<br>keep smiling my sweetheart, you look cute when you smile😚</p>
+                <span class="heart">❤️</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="openBtn" onclick="openEnvelope()">Open Envelope</button>
+            <button id="closeBtn" onclick="closeEnvelope()">Close Envelope</button>
+            <button id="nextPage" onclick="goToNextPage()">Next Page <span class="loading"></span></button>
+        </div>
+    </div>
+    <script src="letter.js"></script>
+</body>
+</html>

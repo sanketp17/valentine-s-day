@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h1 class="animated-text">"Shravanya, Happy First Valentine’s Day! 🌸"</h1>
+            <p class="animated-text delay1">"I wanted to do something special for you because you deserve all the happiness in the world💕 😊</p>
+            <p class="animated-text delay2">So, I made this just for you… I hope you love it!💌</p>
+        </div>
+        <img src="pic.jpg" class="profile-image" alt="Shravanya's Image">
+    </div>
+
+    <button id="nextBtn" class="cute-button">Ready for Some Cuteness? 🥰</button>
+
+    <!-- Loading Animation (Initially Hidden) -->
+    <div id="loading" class="loading-container">
+        <div class="heart-loader"></div>
+        <p>Loading...</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("nextBtn").addEventListener("click", function () {
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+                window.location.href = "letter.html"; // Navigate after animation
+            }, 1000); // Match animation duration
+        });
+    </script>
+    
+</body>
+</html>
